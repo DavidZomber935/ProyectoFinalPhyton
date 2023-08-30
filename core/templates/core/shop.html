@@ -1,0 +1,269 @@
+{% extends 'core/base.html' %} 
+
+{% block title %}Tienda{% endblock %}
+
+{% block header %}
+<h1>Nuestra Tienda</h1>
+{% endblock %} 
+
+{% block content %}{% load static %}
+<div class="section trending">
+  <div class="container">
+    <ul class="trending-filter">
+      <li>
+        <a class="is_active" href="#!" data-filter="*">Mostrar Todos</a>
+      </li>
+      <li>
+        <a href="#!" data-filter=".adv">Mas vendidos</a>
+      </li>
+      <li>
+        <a href="#!" data-filter=".str">Top jugados</a>
+      </li>
+      <li>
+        <a href="#!" data-filter=".rac">Descuento</a>
+      </li>
+    </ul>
+    <div class="row trending-box">
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/fortnite.jpg' %}" alt=""
+            /></a>
+            <span class="price"><em>$36</em>$24</span>
+          </div>
+          <div class="down-content">
+            <span class="category">Shooter</span>
+            <h4>Fortnite</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/trending-02.jpg' %}" alt=""
+            /></a>
+            <span class="price"><em>$32</em>$22</span>
+          </div>
+          <div class="down-content">
+            <span class="category">JRPG</span>
+            <h4>Genshin Impact</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/trending-03.jpg' %}" alt=""
+            /></a>
+            <span class="price"><em>$45</em>$30</span>
+          </div>
+          <div class="down-content">
+            <span class="category">Shooter</span>
+            <h4>PlayerUnknown battlegrounds</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/trending-04.jpg' %}" alt=""
+            /></a>
+            <span class="price"><em>$32</em>$22</span>
+          </div>
+          <div class="down-content">
+            <span class="category">CardGame</span>
+            <h4>Yu-Gi-Oh! Master Duel</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/cod.png' %}" alt=""
+            /></a>
+            <span class="price"><em>$38</em>$26</span>
+          </div>
+          <div class="down-content">
+            <span class="category">Shooter</span>
+            <h4>Call of Duty Modern Warfare 2</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/trending-01.jpg' %}" alt=""
+            /></a>
+            <span class="price"><em>$30</em>$20</span>
+          </div>
+          <div class="down-content">
+            <span class="category">Action</span>
+            <h4>Warframe</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac str"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/shovelknight.png' %}" alt=""
+            /></a>
+            <span class="price"><em>$32</em>$22</span>
+          </div>
+          <div class="down-content">
+            <span class="category">Action</span>
+            <h4>Shovel Knight</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 rac adv"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/scott.png' %}" alt=""
+            /></a>
+            <span class="price"><em>$32</em>$22</span>
+          </div>
+          <div class="down-content">
+            <span class="category">Action</span>
+            <h4>Scott Pilgrim vs The World</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv rac"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/hollow.png' %}" alt=""
+            /></a>
+            <span class="price"><em>$28</em>$20</span>
+          </div>
+          <div class="down-content">
+            <span class="category">Action</span>
+            <h4>Hollow Knight</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/dark.png' %}" alt=""
+            /></a>
+            <span class="price"><em>$26</em>$18</span>
+          </div>
+          <div class="down-content">
+            <span class="category">RPG</span>
+            <h4>Dark Souls Remastered</h4>
+            <a href="{% url 'productDetails' %}l"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 adv"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/demon.png' %}" alt=""
+            /></a>
+            <span class="price"><em>$32</em>$24</span>
+          </div>
+          <div class="down-content">
+            <span class="category">RPG</span>
+            <h4>Demon's Souls</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-3 col-md-6 align-self-center mb-30 trending-items col-md-6 str"
+      >
+        <div class="item">
+          <div class="thumb">
+            <a href="{% url 'productDetails' %}"
+              ><img src="{% static 'core/images/mine.png' %}" alt=""
+            /></a>
+            <span class="price"><em>$45</em>$30</span>
+          </div>
+          <div class="down-content">
+            <span class="category">Action</span>
+            <h4>Minecraft</h4>
+            <a href="{% url 'productDetails' %}"
+              ><i class="fa fa-shopping-bag"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="pagination">
+          <li><a href="#"> &lt; </a></li>
+          <li><a href="#">1</a></li>
+          <li><a class="is_active" href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#"> &gt; </a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
